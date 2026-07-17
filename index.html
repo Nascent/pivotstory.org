@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pivot Story — Can I pay to hear about your pivot?</title>
+<meta name="description" content="I'll pay funded founders for 45 minutes to hear the story of their pivot. Not a sales call.">
+<style>
+  :root{
+    --ink:#1a1a2e;
+    --muted:#555555;
+    --bg:#f8f9fa;
+    --card:#ffffff;
+    --line:#e9ecef;
+    --accent:#1C5382;
+    --accent-soft:#f0f7ff;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:0 24px;}
+  section{padding:56px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+
+  /* hero */
+  .hero{padding:88px 0 64px;text-align:left;}
+  .eyebrow{
+    display:inline-block;font-size:14px;font-weight:600;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:20px;
+  }
+  h1{
+    font-size:clamp(32px,6vw,46px);line-height:1.12;font-weight:700;
+    letter-spacing:-.02em;margin:0 0 20px;
+  }
+  .lede{font-size:20px;color:var(--muted);margin:0 0 32px;}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+    font-weight:600;font-size:17px;padding:14px 26px;border-radius:10px;
+    transition:transform .08s ease, background .15s ease;
+  }
+  .btn:hover{background:#164468;transform:translateY(-1px);}
+
+  h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:0 0 18px;}
+  p{margin:0 0 16px;}
+  .criteria{list-style:none;padding:0;margin:0;}
+  .criteria li{
+    padding:14px 18px;background:var(--card);border:1px solid var(--line);
+    border-radius:10px;margin-bottom:10px;font-size:18px;font-weight:500;
+    display:flex;gap:12px;align-items:baseline;
+  }
+  .criteria li::before{content:"→";color:var(--accent);font-weight:700;}
+  .muted{color:var(--muted);}
+
+  /* booking */
+  .book{background:var(--accent-soft);border-bottom:1px solid var(--line);}
+  #cal-inline{width:100%;min-height:620px;overflow:auto;background:transparent;border-radius:12px;}
+
+  /* faq */
+  .faq-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 24px;}
+  .faq-item{padding:14px 0;}
+  .faq-item h3{font-size:17px;font-weight:600;margin:0 0 8px;}
+  .faq-item p{font-size:15px;color:var(--muted);margin:0;}
+  .faq-item ol{font-size:15px;color:var(--muted);margin:0;padding-left:20px;}
+
+  footer{padding:40px 0 60px;text-align:center;color:var(--muted);font-size:14px;}
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="hero">
+      <h1>Can I pay to hear about your pivot?</h1>
+      <a class="btn" href="#book">Book a time</a>
+    </header>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>About the project</h2>
+      <p>Hi 👋 <a href="https://www.linkedin.com/in/mikevladimer/" target="_blank" rel="noopener">I'm Mike</a> and <a href="https://www.nascentstartups.com/p/023-no-dont-mimic-successful-founders" target="_blank" rel="noopener">I'm obsessed</a> with startups with no customers. I graduated from UC Berkeley and Carnegie Mellon. I've worked in innovation and entrepreneurship for the last 20 years.</p>
+      <p>Right now, I'm keen to speak with founders of seed-stage startups who tried pivoting in the last few years (2022-2026). I hope to learn about your experience. I'm serious about the project and I value your time, so I'm willing to pay you for the meeting.</p>
+    </div>
+  </section>
+
+  <section id="book" class="book">
+    <div class="wrap">
+      <h2>Book a time</h2>
+      <p class="muted">45 minutes, over Zoom. Pick a slot that works for you.</p>
+      <div id="cal-inline"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>FAQs</h2>
+      <div class="faq-box">
+        <div class="faq-item">
+          <h3>How much are you paying?</h3>
+          <p>$200 or whatever you think is fair.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Any requirements?</h3>
+          <ol>
+            <li>You raised $1M+ during 2022–2026</li>
+            <li>You tried a pivot from your original pitch.</li>
+          </ol>
+        </div>
+        <div class="faq-item">
+          <h3>Is this a sales call?</h3>
+          <p>No.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do you protect privacy? Will you publish this?</h3>
+          <p>To be present and avoid being distracted by notetaking, I record calls. I never publish full meetings, although sometimes I publish anonymous, brief (~10sec), clips. Here's <a href="https://youtu.be/BBl7y2ahtB0?si=UuqGqGTJueWQbqqL&t=322" target="_blank" rel="noopener">an example</a> from my podcast. You're welcome to opt-out -- my priority is learning from you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Mike Vladimer · <a href="https://www.nascentstartups.com/" target="_blank" rel="noopener">Nascent</a>
+    </div>
+  </footer>
+
+<!-- Cal.com inline embed -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "pivot-story", { origin: "https://cal.com" });
+  Cal.ns["pivot-story"]("inline", {
+    elementOrSelector: "#cal-inline",
+    config: { layout: "month_view" },
+    calLink: "nascent/pivot-story",
+  });
+</script>
+
+</body>
+</html>
