@@ -30,7 +30,7 @@
   section:last-of-type{border-bottom:none;}
 
   /* hero */
-  .hero{padding:88px 0 64px;text-align:left;}
+  .hero{padding:88px 0 40px;text-align:left;}
   .eyebrow{
     display:inline-block;font-size:14px;font-weight:600;letter-spacing:.04em;
     text-transform:uppercase;color:var(--accent);margin-bottom:20px;
@@ -69,6 +69,10 @@
   .faq-item p{font-size:15px;color:var(--muted);margin:0;}
   .faq-item ol{font-size:15px;color:var(--muted);margin:0;padding-left:20px;}
 
+  /* video embed */
+  .video{position:relative;width:100%;aspect-ratio:16/9;margin-top:24px;border-radius:12px;overflow:hidden;}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+
   footer{padding:40px 0 60px;text-align:center;color:var(--muted);font-size:14px;}
   a{color:var(--accent);}
 </style>
@@ -85,16 +89,11 @@
   <section>
     <div class="wrap">
       <h2>About the project</h2>
-      <p>Hi 👋 <a href="https://www.linkedin.com/in/mikevladimer/" target="_blank" rel="noopener">I'm Mike</a> and <a href="https://www.nascentstartups.com/p/023-no-dont-mimic-successful-founders" target="_blank" rel="noopener">I'm obsessed</a> with startups with no customers. I graduated from UC Berkeley and Carnegie Mellon. I've worked in innovation and entrepreneurship for the last 20 years.</p>
-      <p>Right now, I'm keen to speak with founders of seed-stage startups who tried pivoting in the last few years (2022-2026). I hope to learn about your experience.</p>
-    </div>
-  </section>
-
-  <section id="book" class="book">
-    <div class="wrap">
-      <h2>Book a time</h2>
-      <p class="muted">45 minutes, over Zoom. Pick a slot that works for you.</p>
-      <div id="cal-inline"></div>
+      <p>Hi 👋 <a href="https://www.linkedin.com/in/mikevladimer/" target="_blank" rel="noopener">I'm Mike</a> and <a href="https://www.nascentstartups.com/p/023-no-dont-mimic-successful-founders" target="_blank" rel="noopener">I'm obsessed</a> with <strong>startups with no customers</strong>. I graduated from UC Berkeley and Carnegie Mellon. I've worked in innovation and entrepreneurship for the last 20 years.</p>
+      <p>Right now, I'm keen to speak with founders who raised seed funding recently and tried pivoting. I hope to learn about your experience.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/vMzbORdSzfM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
@@ -123,9 +122,17 @@
         </div>
         <div class="faq-item">
           <h3>How do you protect privacy? Will you publish this?</h3>
-          <p>To be present and avoid being distracted by notetaking, I record calls. I never publish full meetings, although sometimes I publish anonymous, brief (~10sec), clips. Here's <a href="https://youtu.be/BBl7y2ahtB0?si=UuqGqGTJueWQbqqL&t=322" target="_blank" rel="noopener">an example</a> from my podcast. You're welcome to opt-out -- my priority is learning from you.</p>
+          <p>To be present and avoid being distracted by notetaking, I record calls. I never publish full meetings, although sometimes I publish anonymous, brief (~10sec) clips. Here's <a href="https://youtu.be/BBl7y2ahtB0?si=UuqGqGTJueWQbqqL&t=322" target="_blank" rel="noopener">an example</a> from my podcast. You're welcome to opt-out -- my priority is learning from you.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="book" class="book">
+    <div class="wrap">
+      <h2>Book a time</h2>
+      <p class="muted">45 minutes, over Zoom. Pick a slot that works for you.</p>
+      <div id="cal-inline"></div>
     </div>
   </section>
 
